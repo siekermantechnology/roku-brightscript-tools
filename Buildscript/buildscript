@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# A very simple bash script used to build and deploy a Roku Brightscript channel / app to device.
+# Place this script in the root directory of your project. 
+# On Mac OS X, in Terminal, navigate to the root directory and execute by typing ./buildscript 
+
+# First it removes any old version of the zip file, if it is present.
+rm NAME_OF_YOUR_CHANNEL.zip
+
+# Then it create a new version of the zip file.
+# "-FS" ensures all files in the zip are updated, just in case an old zip version is still present.
+# "-9" results in maximum compression.
+# "-r" ensures the zip command recursively goes through all subdirectories.
+# "manifest source/ images/" are the files and directories that will be included in the zip file.
+zip -FS -9 -r NAME_OF_YOUR_CHANNEL.zip manifest source/ images/
+
+# The zip file is then uploaded to the Roku device.
+# Make sure your Roku device is set to development mode first as described in
+# http://sdkdocs.roku.com/display/sdkdoc/Developer+Guide#DeveloperGuide-71EnablingDevelopmentModeonyourbox
+# "--user" supplies the username and password for the development web interface.
+# "--anyauth" sets the correct authentication method automatically.
+# "-sS" sets curl to silent mode, but still shows errors.
+# "-F" sets the POST data.
+# "| grep red" filters the resulting page to only show the text which indicates success or failure.
+curl --user rokudev:YOUR_PASSWORD --anyauth -sS -F "mysubmit=Install" -F "archive=@NGSN.zip" http://IP_ADDRESS_OF_YOUR_ROKU/plugin_install | grep red

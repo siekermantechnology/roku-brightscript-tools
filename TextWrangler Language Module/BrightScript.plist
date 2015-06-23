@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>if</string>
+		<string>end</string>
+		<string>then</string>
+		<string>else</string>
+		<string>while</string>
+		<string>and</string>
+		<string>return</string>
+		<string>Function</string>
+		<string>Sub</string>
+		<string>End</string>
+		<string>As</string>
+		<string>as</string>
+		<string>for</string>
+		<string>each</string>
+		<string>in</string>
+		<string>next</string>
+		<string>exit</string>
+		<string>not</string>
+		<string>stop</string>
+		<string>true</string>
+		<string>false</string>
+		<string>invalid</string>
+		<string>print</string>
+	</array>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>Object</string>
+		<string>object</string>
+		<string>Integer</string>
+		<string>integer</string>
+		<string>Boolean</string>
+		<string>boolean</string>
+		<string>String</string>
+		<string>string</string>
+	</array>
+	<key>BBLMLanguageCode</key>
+	<string>BRIG</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>BrightScript</string>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.brs</string>
+		</dict>
+	</array>
+	<key>BBLMCommentLineDefault</key>
+	<string>&apos;</string>
+	<key>Language Features</key>
+	<dict>
+		<key>Close Parameter Lists</key>
+		<string>)</string>
+		<key>Open Strings 1</key>
+		<string>&quot;</string>
+		<key>Close Strings 1</key>
+		<string>&quot;</string>
+		<key>Identifier and Keyword Characters</key>
+		<string>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_</string>
+		<key>Open Line Comments</key>
+		<string>&apos;</string>
+		<key>Open Parameter Lists</key>
+		<string>(</string>
+	</dict>
+</dict>
+</plist>

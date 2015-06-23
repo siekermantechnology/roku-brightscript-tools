@@ -1,0 +1,9 @@
+The file BrightScript.plist offers automatic syntax highlighting for Roku BrightScript in TextWrangler (https://itunes.apple.com/us/app/textwrangler/id404010395?mt=12) by adding a Language Module.
+
+Technical documentation on TextWrangler Language Modules is available at http://www.barebones.com/support/develop/clm.html.
+
+Instructions for Mac OS X:
+
+1) Place BrightScript.plist in ~/Library/Application Support/TextWrangler/Language Modules/ or /Library/Application Support/TextWrangler/Language Modules/
+2) Restart TextWrangler
+3) For the best effect, change the color of comments in TextWrangler to something more distinctive than light grey.

@@ -113,6 +113,8 @@
 		<string>boolean</string>
 		<string>String</string>
 		<string>string</string>
+		<string>Void</string>
+		<string>void</string>
 	</array>
 	<key>BBLMLanguageCode</key>
 	<string>BRIG</string>
